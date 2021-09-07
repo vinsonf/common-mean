@@ -1,2 +1,2 @@
-"use strict";
+import './server.js';
 //# sourceMappingURL=main.js.map

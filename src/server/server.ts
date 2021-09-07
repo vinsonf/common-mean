@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
    res.json({test: 'test'})
   });
 
-  app.get('/user',function(req,res){
+  app.get('/users',function(req,res){
       res.sendFile(path.join(__dirname,'users.json'))
   });
  
