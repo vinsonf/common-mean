@@ -1,14 +1,8 @@
 import express from "express";
 const app = express();
+const port = 3002;
 
 
-app.get('/', function (req, res) {
-    res.json({ message: 'working' });
-});
-
-
-
-app.listen(3003, function () {
-    console.log('run on port');
-    
-})
+  app.listen(port, function () {
+    console.log(`running on http://localhost:${port}`)
+  })
