@@ -19,6 +19,10 @@ app.get('/users', function(req,res){
     res.sendFile(path.join(__dirname, 'users.json'))
 })
 
+app.get('/todos', function(req,res){
+    res.sendFile(path.join(__dirname, "todos.json"))
+})
+
 app.listen(port, function(){
  console.log(`running on port http://localhost:${port}`)
 })
