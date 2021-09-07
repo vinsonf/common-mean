@@ -8,7 +8,7 @@
     "public/*"
   ],
   "ts-node": {
-    "files": false
+    "files": true
   },
   "display": "MEAN",
   "_version": "1.0.0",
