@@ -1,0 +1,11 @@
+{
+   "project": {
+       "remote": {"name": "origin",
+            "branches": [{"name": "vinson"}, {"name": "vinson-routing"}]
+        },
+       "local": {
+        "name": "local",
+        "branches": [{"name": "vinson", "upstream": "remote.origin.vinson"}]
+       }
+   }
+}
