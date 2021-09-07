@@ -6,7 +6,7 @@ const __dirname = path.resolve();
 const app = express();
 const port = 3000;
 
-app.use(cors)
+app.use(cors());
 
 app.get('/', function(req, res) {
     res.json({message: 'up and running'})
@@ -16,5 +16,5 @@ app.get('/users', function(req, res) {
 })
 
 app.listen(port, function() {
-    console.log('running on http://localhost:'+ port) 
+    console.log('running on http://localhost:'+ port)
 })
