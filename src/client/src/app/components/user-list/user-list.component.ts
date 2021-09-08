@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { User } from 'src/app/models/user';
 import { UsersService } from 'src/app/services/users.service';
 
 @Component({
@@ -8,7 +10,7 @@ import { UsersService } from 'src/app/services/users.service';
 })
 export class UserListComponent implements OnInit {
 
-  
+  users$: Observable<User[]> | undefined
   constructor(private usersService: UsersService) { }
 
   ngOnInit(): void {
