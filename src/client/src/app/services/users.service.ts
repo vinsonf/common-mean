@@ -10,10 +10,11 @@ export class UsersService {
   users: User[] = [];
 
   constructor(private apiService: ApiService) {
+      this.getUsers();
    }
 
    getUsers(){
-      this.apiService.getData('users');
+      return this.apiService.getData<User[]>('users');
 
    }
 }
