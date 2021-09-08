@@ -10,7 +10,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getUser<T>(resource:string){
+  getData<T>(resource:string){
    return this.http.get<T>(this.baseUrl + resource)
   }
 
