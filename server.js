@@ -11,9 +11,6 @@ app.get('/', function (req, res) {
 app.get('/users', function (req, res) {
     res.sendFile(path.join(__dirname, 'users.json'));
 });
-app.get('/posts', function (req, res) {
-    res.sendFile(path.join(__dirname, 'posts.json'));
-});
 app.listen(port, function () {
     console.log(`port running on http://localhost: ${port}`);
 });

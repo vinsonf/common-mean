@@ -2,7 +2,7 @@
   "include": [
     "src/server/**/*",
     "src/shared/**/*"
-  ],
+, "src/server/server.ts"  ],
   "exclude": [
     "node_modules/*",
     "public/*"
