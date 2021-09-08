@@ -1,3 +1,4 @@
+import { ApiService } from './api.service';
 import { Todo } from './../model/todo';
 import { Injectable } from '@angular/core';
 
@@ -6,5 +7,16 @@ import { Injectable } from '@angular/core';
 })
 export class TodoService {
   private _todo: Todo[] = [];
-  constructor() { }
+  constructor(private api: ApiService) {
+    this.getTodo();
+  }
+  get todos() {
+    return this._todo;
+  }
+  getTodo() {
+    this.api.get<Todo[]>('todos').subscribe(todos => {
+      this._todo= todos;
+    })
 }
+  }
+ 
