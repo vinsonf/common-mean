@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from '../models/user';
 import { ApiService } from './api.service';
 
 @Injectable({
@@ -6,5 +7,13 @@ import { ApiService } from './api.service';
 })
 export class UsersService {
 
-  constructor(private apiService: ApiService) { }
+  users: User[] = [];
+
+  constructor(private apiService: ApiService) {
+   }
+
+   getUsers(){
+      this.apiService.getData('users');
+
+   }
 }
