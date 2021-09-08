@@ -10,10 +10,16 @@ import { UsersService } from 'src/app/services/users.service';
 })
 export class UserListComponent implements OnInit {
 
-  users$: Observable<User[]> | undefined
+  public users$: Observable<User[]> | undefined
   constructor(private usersService: UsersService) { }
 
   ngOnInit(): void {
+    this.getUsers();
+
+  }
+
+  getUsers(){
+    this.users$ = this.usersService.getUsers();
   }
 
 }
