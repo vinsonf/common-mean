@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
-    TodoListComponent
+    TodoListComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

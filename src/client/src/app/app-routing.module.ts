@@ -4,8 +4,8 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 
 const routes: Routes = [
-  {path: '/users', component: UserListComponent},
-  {path: '/todos', component: TodoListComponent}
+  {path: 'users', component: UserListComponent},
+  {path: 'todos', component: TodoListComponent}
 
 ];
 
