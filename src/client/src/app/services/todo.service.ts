@@ -10,8 +10,7 @@ export class TodoService {
   private _todos: Todo[] = [];
 
   constructor(private apiService: ApiService) {
-
-
+      this.getTodos();
   }
 
   get todos(){
