@@ -9,7 +9,18 @@ export class TodoService {
 
   private _todos: Todo[] = [];
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService) {
+
+
+  }
+
+  get todos(){
+  return this._todos ;
+  }
+
+  set todos(todos){
+  this._todos = todos;
+  }
 
   getTodos(){
     return this.apiService.getData<Todo[]>('todos')
