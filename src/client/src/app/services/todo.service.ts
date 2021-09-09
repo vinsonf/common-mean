@@ -11,5 +11,7 @@ export class TodoService {
 
   constructor(private apiService: ApiService) { }
 
-
+  getTodos(){
+    return this.apiService.getData<Todo[]>('todos')
+  }
 }
