@@ -1,1 +1,8 @@
-<p>todo-list works!</p>
+<h3>Todo</h3>
+<ul>
+  <li *ngFor="let todo of todos$ | async">
+    <span> <b>ID: </b> </span>  {{todo.id}} <br>
+  <span> <b>Title:</b> </span>  {{todo.title}}
+  <hr>
+  </li>
+</ul>
