@@ -1,4 +1,16 @@
 <h3>Users</h3>
+<input type="text" placeholder="Name">
+<br>
+<br>
+<input type="text" placeholder="User Name">
+<br>
+<br>
+<input type="text" placeholder="Email Address">
+<br>
+<br>
+<button>Add User</button>
+
+<hr>
 <ul>
   <li *ngFor="let user of users$ | async">{{user.name}}</li>
 </ul>
